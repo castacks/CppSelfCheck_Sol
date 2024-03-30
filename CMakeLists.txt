@@ -13,7 +13,9 @@ add_subdirectory(HeaderOnlyLibrary)
 
 # Main executable.
 set(EXE_MAIN ${PROJECT_NAME}_exe)
+
 add_executable(${EXE_MAIN} process_image.cpp main.cpp)
+
 target_link_libraries(${EXE_MAIN}
         Eigen3::Eigen
         ${OpenCV_LIBRARIES}
